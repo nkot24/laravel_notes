@@ -26,4 +26,10 @@ class NoteController extends Controller
         Note::create($data);
         return redirect('notes');
     }
+    public function show(string $id): View
+    {
+        return view('notes.show', [
+            'user' => User::findOrFail($id)
+        ]);
+    }
 }

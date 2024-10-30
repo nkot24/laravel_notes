@@ -16,5 +16,6 @@
         @endforeach
     </ul>
     <a href="/notes/create">Create Note</a>
+    <a href="/notes/{id}">Show</a>
 </body>
 </html>
