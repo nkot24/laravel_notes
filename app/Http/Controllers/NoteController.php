@@ -32,4 +32,13 @@ class NoteController extends Controller
             'user' => User::findOrFail($id)
         ]);
     }
+    public function edit(){
+        return view('notes.edit');
+    }
+    public function update(){
+        return view('notes.update');
+    }
+    public function destroy(){
+        return view('notes.destroy');
+    }
 }
